@@ -7,9 +7,9 @@ fulldir=$1/$2
 mkdir -p $fulldir
 
 pushd $fulldir
-mkdir -p problem test-cases
-touch solution.go solution.py
-code  solution.go solution.py
+mkdir -p problem test-cases solutions
+touch solutions/solution.go solutions/solution.py
+code  solutions/solution.go solutions/solution.py
 popd
 
 nautilus $fulldir
