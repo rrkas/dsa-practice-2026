@@ -8,12 +8,20 @@ def check_dir(platform: str, prob_name: str):
     test_cases_pics = sorted((project_dir / "test-cases").glob("*.png"))
     solution_files = sorted((project_dir / "solutions").glob("*.*"))
 
-    return (
-        len(problem_pics) > 0
-        and len(test_cases_pics) > 0
-        and len(solution_files) > 0
-        and all(os.stat(e).st_size > 0 for e in solution_files)
-    )
+    if len(problem_pics) == 0:
+        return False, "Missing Problem Pics"
+
+    if len(test_cases_pics) == 0:
+        return False, "Missing test cases pics"
+
+    if len(solution_files) == 0:
+        return False, "Missing Solution Files"
+
+    for e in solution_files:
+        if os.stat(e).st_size == 0:
+            return False, f"Solution {e.name} is empty"
+
+    return True, None
 
 
 if __name__ == "__main__":
