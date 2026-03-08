@@ -7,6 +7,10 @@
 ## Exercism
 
 - https://exercism.org/
+- `sudo snap install exercism`
+- `exercism configure --token=...` (https://exercism.io/my/settings)
+- `exercism configure --workspace ...`
+- `exercism download --track=python --exercise=hello-world`
 
 ## HackerEarth
 
