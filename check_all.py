@@ -28,4 +28,19 @@ for platform in sorted(platforms):
             }
         )
 
-print(pd.DataFrame(recs).to_string())
+
+df = pd.DataFrame(recs)
+print(df[df["status"] != "PASS"].to_string())
+
+print()
+print("=-" * 50)
+print()
+
+summary = []
+for (pl,), tdf in df.groupby(["platform"]):
+    tot = len(tdf)
+    passed = len(tdf[tdf["status"] == "PASS"])
+    summary.append({"platform": pl, "passed": f"{passed}/{tot}"})
+
+# print(summary)
+print(pd.DataFrame(summary).to_string())
