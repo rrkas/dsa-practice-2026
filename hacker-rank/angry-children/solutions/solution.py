@@ -15,18 +15,20 @@ import sys
 #  2. INTEGER_ARRAY arr
 #
 
+
 def maxMin(k, arr):
     arr.sort()
-    mindiff = float('inf')
-    for i in range(0, len(arr)-k):
-        diff = arr[i+k-1] - arr[i]
+    mindiff = float("inf")
+    for i in range(0, len(arr) - k):
+        diff = arr[i + k - 1] - arr[i]
         if diff < mindiff:
             mindiff = diff
 
     return mindiff
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     n = int(input().strip())
 
@@ -40,6 +42,6 @@ if __name__ == '__main__':
 
     result = maxMin(k, arr)
 
-    fptr.write(str(result) + '\n')
+    fptr.write(str(result) + "\n")
 
     fptr.close()

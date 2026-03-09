@@ -16,14 +16,16 @@ import sys
 #  3. INTEGER_ARRAY B
 #
 
+
 def twoArrays(k, A, B):
-    for a, b in zip(sorted(A), sorted(B,reverse=True)):
+    for a, b in zip(sorted(A), sorted(B, reverse=True)):
         if a + b < k:
             return "NO"
     return "YES"
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     q = int(input().strip())
 
@@ -40,6 +42,6 @@ if __name__ == '__main__':
 
         result = twoArrays(k, A, B)
 
-        fptr.write(result + '\n')
+        fptr.write(result + "\n")
 
     fptr.close()

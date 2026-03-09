@@ -15,6 +15,7 @@ import sys
 #  2. INTEGER k
 #
 
+
 def maximumToys(prices, k):
     prices.sort()
     items = []
@@ -25,8 +26,9 @@ def maximumToys(prices, k):
         items.append(p)
     return len(items)
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     first_multiple_input = input().rstrip().split()
 
@@ -38,6 +40,6 @@ if __name__ == '__main__':
 
     result = maximumToys(prices, k)
 
-    fptr.write(str(result) + '\n')
+    fptr.write(str(result) + "\n")
 
     fptr.close()

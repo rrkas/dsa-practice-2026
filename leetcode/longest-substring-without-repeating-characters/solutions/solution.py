@@ -14,6 +14,7 @@
 
 #         return maxlen
 
+
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         last = {}
@@ -28,4 +29,3 @@ class Solution:
             maxlen = max(maxlen, r - l + 1)
 
         return maxlen
-

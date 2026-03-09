@@ -6,7 +6,7 @@ class Solution:
 
             if c in m:
                 return [m[c], i]
-            
+
             m[n] = i
 
         return []

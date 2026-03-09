@@ -19,7 +19,7 @@ def check_dir(platform: str, prob_name: str):
 
     for e in solution_files:
         if os.stat(e).st_size == 0:
-            return False, f"Solution {e.name} is empty"
+            return False, f"Solution file `{e.name}` is empty"
 
     return True, None
 

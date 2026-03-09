@@ -13,12 +13,14 @@ import sys
 # The function accepts INTEGER_ARRAY candles as parameter.
 #
 
+
 def birthdayCakeCandles(candles):
     maxc = max(candles)
     return candles.count(maxc)
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     candles_count = int(input().strip())
 
@@ -26,6 +28,6 @@ if __name__ == '__main__':
 
     result = birthdayCakeCandles(candles)
 
-    fptr.write(str(result) + '\n')
+    fptr.write(str(result) + "\n")
 
     fptr.close()
