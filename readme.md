@@ -20,9 +20,9 @@
 
 - https://www.hackerrank.com/
 
-## InterviewBit
+<!-- ## InterviewBit
 
-- https://www.interviewbit.com/
+- https://www.interviewbit.com/ -->
 
 ## LeetCode
 
