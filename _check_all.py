@@ -1,5 +1,5 @@
 from pathlib import Path
-from check_folder import check_dir
+from _check_folder import check_dir
 from loguru import logger
 import pandas as pd
 
@@ -33,7 +33,7 @@ df = pd.DataFrame(recs)
 print(df[df["status"] != "PASS"].to_string())
 
 print()
-print("=-" * 50)
+print("-" * 80)
 print()
 
 summary = []
