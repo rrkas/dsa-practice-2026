@@ -96,3 +96,20 @@ Thu Mar 12 09:22:06 AM IST 2026
 1   hacker-rank  15/16
 2      leetcode  42/43
 
+==========================================================================================
+
+Thu Mar 12 11:36:28 AM IST 2026
+
+        platform                     prob name status                    issue
+0   hacker-earth  count-valid-pairs-2-da02a8f2   FAIL     Missing Problem Pics
+4    hacker-rank                 board-cutting   FAIL  Missing test cases pics
+45      leetcode   regular-expression-matching   FAIL  Missing test cases pics
+62      leetcode             wildcard-matching   FAIL  Missing test cases pics
+
+--------------------------------------------------------------------------------
+
+       platform passed
+0  hacker-earth    0/1
+1   hacker-rank  15/16
+2      leetcode  45/47
+
