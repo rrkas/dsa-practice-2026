@@ -63,3 +63,36 @@ Wed Mar 11 04:25:21 PM IST 2026
 1   hacker-rank  15/16
 2      leetcode  39/40
 
+==========================================================================================
+
+Thu Mar 12 09:15:04 AM IST 2026
+
+        platform                     prob name status                                 issue
+0   hacker-earth  count-valid-pairs-2-da02a8f2   FAIL                  Missing Problem Pics
+4    hacker-rank                 board-cutting   FAIL               Missing test cases pics
+39      leetcode              multiply-strings   FAIL  Solution file `solution.py` is empty
+42      leetcode   regular-expression-matching   FAIL               Missing test cases pics
+
+--------------------------------------------------------------------------------
+
+       platform passed
+0  hacker-earth    0/1
+1   hacker-rank  15/16
+2      leetcode  41/43
+
+==========================================================================================
+
+Thu Mar 12 09:22:06 AM IST 2026
+
+        platform                     prob name status                    issue
+0   hacker-earth  count-valid-pairs-2-da02a8f2   FAIL     Missing Problem Pics
+4    hacker-rank                 board-cutting   FAIL  Missing test cases pics
+42      leetcode   regular-expression-matching   FAIL  Missing test cases pics
+
+--------------------------------------------------------------------------------
+
+       platform passed
+0  hacker-earth    0/1
+1   hacker-rank  15/16
+2      leetcode  42/43
+

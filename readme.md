@@ -4,6 +4,10 @@
 
 - https://www.codechef.com/
 
+## Code Wars
+
+- https://www.codewars.com/
+
 <!-- ## Exercism
 
 - https://exercism.org/
