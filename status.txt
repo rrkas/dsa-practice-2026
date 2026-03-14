@@ -1,9 +1,12 @@
-       platform                     prob name status                 issue
-0  hacker-earth  count-valid-pairs-2-da02a8f2   FAIL  Missing Problem Pics
+        PLATFORM                     PROB NAME STATUS                    ISSUE
+1   hacker-earth  count-valid-pairs-2-da02a8f2   FAIL     Missing Problem Pics
+6    hacker-rank                    cloudy-day   FAIL  Missing test cases pics
+81      leetcode                  valid-number   FAIL  Missing test cases pics
 
 --------------------------------------------------------------------------------
 
-       platform passed
-0  hacker-earth    0/1
-1   hacker-rank  16/16
-2      leetcode  60/60
+       PLATFORM PASSED
+0      codewars    1/1
+1  hacker-earth    0/1
+2   hacker-rank  18/19
+3      leetcode  64/65

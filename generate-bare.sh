@@ -3,7 +3,7 @@ set -e
 
 mkdir -p $1
 
-fulldir=$1/$2
+fulldir=platforms/$1/$2
 mkdir -p $fulldir
 
 pushd $fulldir
