@@ -56,13 +56,12 @@ func maximumPeople(p []int64, x []int64, y []int64, r []int64) int64 {
 	var sunny int64 = 0
 
 	for _, e := range events {
-
-		if e.typ == 0 {
+		switch e.typ {
+		case 0:
 			active[e.id] = struct{}{}
-		} else if e.typ == 2 {
+		case 2:
 			delete(active, e.id)
-		} else {
-
+		default:
 			if len(active) == 0 {
 				sunny += e.pop
 			} else if len(active) == 1 {
