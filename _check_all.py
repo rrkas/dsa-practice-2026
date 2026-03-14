@@ -21,6 +21,7 @@ for platform in sorted(Path("platforms").glob("*/")):
 
 
 df = pd.DataFrame(recs)
+df.to_csv("status.csv")
 print(df[df["STATUS"] != "PASS"].to_string())
 
 print()
