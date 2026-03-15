@@ -1,10 +1,10 @@
-       PLATFORM                     PROB NAME STATUS                 ISSUE
-1  hacker-earth  count-valid-pairs-2-da02a8f2   FAIL  Missing Problem Pics
+  PLATFORM      PROB NAME                  SOLN_EXTS STATUS ISSUE                                
+3  hacker-earth  minimum-length-4-945227e2  []        FAIL   Solution file `solution.go` is empty
 
 --------------------------------------------------------------------------------
 
-       PLATFORM PASSED
-0      codewars    1/1
-1  hacker-earth    0/1
-2   hacker-rank  19/19
-3      leetcode  67/67
+  PASSED      PLATFORM
+0    2/2      codewars
+1    1/2  hacker-earth
+2  22/22   hacker-rank
+3  68/68      leetcode

@@ -1,7 +1,7 @@
 set -x
 set -e
 
-mkdir -p $1
+mkdir -p platforms/$1
 
 fulldir=platforms/$1/$2
 mkdir -p $fulldir
