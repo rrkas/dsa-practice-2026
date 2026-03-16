@@ -1,8 +1,10 @@
 from pathlib import Path
 import sys, os
+from _platform_score_level import get_platform_score_level
 
 
 def generate_new(platform: str, prob_name: str):
+    score, level = get_platform_score_level(platform, prob_name)
     platform_dir = (Path("platforms") / platform).resolve()
     os.makedirs(platform_dir, exist_ok=True)
 

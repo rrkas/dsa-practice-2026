@@ -1,4 +1,5 @@
 from pathlib import Path
+from _platform_score_level import get_platform_score_level
 import sys, os
 import os.path
 
@@ -6,7 +7,7 @@ import pandas as pd
 
 
 class Record:
-    def __init__(self, platform, prob_name):
+    def __init__(self, platform: str, prob_name: str):
         self.platform = platform
         self.prob_name = prob_name
 
@@ -18,9 +19,16 @@ class Record:
         self.issue = None
         self.valid_soln_exts = set()
 
+        self.difficulty_score = None
+        self.difficulty_level = None
+
         self.validate()
 
     def validate(self):
+        self.difficulty_score, self.difficulty_level = get_platform_score_level(
+            self.platform, self.prob_name
+        )
+
         for e in self.solution_files:
             if os.stat(e).st_size == 0:
                 self.issue = f"Solution file `{e.name}` is empty"
@@ -46,6 +54,8 @@ class Record:
         return {
             "PLATFORM": self.platform,
             "PROB NAME": self.prob_name,
+            "DIFF_SCORE": self.difficulty_score or 0,
+            "DIFF_LEVEL": self.difficulty_level or "",
             "PROB_STMNT_PICS": len(self.problem_pics),
             "TEST_CASES": len(self.test_cases),
             "SOLN_EXTS": sorted(self.valid_soln_exts),

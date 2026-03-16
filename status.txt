@@ -1,7 +1,12 @@
-     PLATFORM   PASSED
-     codechef      3/3
-     codewars      2/2
- hacker-earth      2/2
-  hacker-rank    22/22
-     leetcode    78/78
-    TOTAL ==>  107/107
+       PLATFORM          PROB NAME  DIFF_SCORE DIFF_LEVEL  PROB_STMNT_PICS  TEST_CASES SOLN_EXTS STATUS                                 ISSUE
+30  hacker-rank  80--fighting-pits          80                           3           0        []   FAIL  Solution file `solution.go` is empty
+
+--------------------------------------------------------------------------------
+
+     PLATFORM   PASSED                  DIFF_LEVELS TOT_DIFF_SCORE
+     codechef      3/3                                        1517
+     codewars      2/2                                          13
+ hacker-earth      2/2             {'E': 1, 'M': 1}               
+  hacker-rank    23/24                                         821
+     leetcode    78/78  {'E': 15, 'H': 16, 'M': 47}               
+    TOTAL ==>  108/109                                            

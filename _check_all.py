@@ -1,6 +1,7 @@
 from pathlib import Path
 from _check_folder import Record
-import pandas as pd
+import pandas as pd, json
+from collections import Counter
 
 recs = []
 
@@ -33,6 +34,14 @@ for (pl,), tdf in df.groupby(["PLATFORM"]):
         {
             "PLATFORM": pl,
             "PASSED": f"{passed}/{tot}",
+            "DIFF_LEVELS": (
+                dict(**Counter(tdf["DIFF_LEVEL"]))
+                if tdf["DIFF_SCORE"].sum() == 0
+                else ""
+            ),
+            "TOT_DIFF_SCORE": (
+                tdf["DIFF_SCORE"].sum() if tdf["DIFF_SCORE"].sum() != 0 else ""
+            ),
         }
     )
 
@@ -40,6 +49,8 @@ summary.append(
     {
         "PLATFORM": "TOTAL ==>",
         "PASSED": f"{tot_pass}/{tot_probs}",
+        "DIFF_LEVELS": "",
+        "TOT_DIFF_SCORE": "",
     }
 )
 
