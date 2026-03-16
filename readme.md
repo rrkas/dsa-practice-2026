@@ -1,67 +1,56 @@
 # DSA, Problem Solving Practice & Interview Prep - 2026
 
-## Preferred
+## DSA, Problem Solving Practice
 
-### LeetCode [FREE]
+### Free
 
-- https://leetcode.com/
+1. **Leet Code** [FREE]
+    - https://leetcode.com/
 
-### HackerRank [FREE]
+1. **Hacker Rank** [FREE]
+    - https://www.hackerrank.com/
 
-- https://www.hackerrank.com/
+1. **Code Chef** [FREE]
+    - https://www.codechef.com/
+    - **DSA**: https://www.codechef.com/roadmap/data-structures-and-algorithms
+    - **Competitive Programming**: https://www.codechef.com/roadmap/become-5-star
 
+1. **Code Wars** [FREE]
+    - <img src="https://www.codewars.com/users/rrkas-dsa-2026/badges/large">
+    - https://www.codewars.com/
 
-## Others - Free
+1. **Exercism** [FREE]
 
-### CodeChef [FREE]
+    - https://exercism.org/
+    <!-- - `sudo snap install exercism`
+    - `exercism configure --token=...` (https://exercism.io/my/settings)
+    - `exercism configure --workspace ...`
+    - `exercism download --track=python --exercise=hello-world` -->
 
-- https://www.codechef.com/
-- **DSA**: https://www.codechef.com/roadmap/data-structures-and-algorithms
-- **Competitive Programming**: https://www.codechef.com/roadmap/become-5-star
+1. **Hacker Earth** [FREE]
+    - https://www.hackerearth.com/
 
-### Code Wars [FREE]
-
-- https://www.codewars.com/
-
-### Exercism [FREE] [TOO MUCH SETUP]
-
-- https://exercism.org/
-- `sudo snap install exercism`
-- `exercism configure --token=...` (https://exercism.io/my/settings)
-- `exercism configure --workspace ...`
-- `exercism download --track=python --exercise=hello-world`
-
-### HackerEarth [FREE]
-
-- https://www.hackerearth.com/
-
-
-### High Scalability - Blogs [FREE]
-
-- https://highscalability.com/
-
-### Class Central [FREE]
-
-- https://classcentral.com/
 
 ## Others - PAID
 
-### Screeps [PAID]
+1. **High Scalability** - Blogs [FREE]
+    - https://highscalability.com/
 
-- https://www.screeps.com/
+1. **Class Central** [FREE]
+    - https://classcentral.com/
 
-### Byte Byte Go [PAID]
+1. **Screeps** [PAID]
+    - https://www.screeps.com/
 
-- https://bytebytego.com/
+1. **Byte Byte Go** [PAID]
+    - https://bytebytego.com/
 
 
 ## Others - Yet to explore
 
-### InterviewBit
+1. **Interview Bit**
+    - https://www.interviewbit.com/
 
-- https://www.interviewbit.com/
-
-### Code in Game
-
-- https://www.codingame.com/
+1. **Code in Game**
+    - https://www.codingame.com/
 

@@ -2,36 +2,63 @@ from pathlib import Path
 import sys, os
 import os.path
 
+import pandas as pd
 
-def check_dir(platform: str, prob_name: str):
-    project_dir = Path(f"platforms/{platform}/{prob_name}")
 
-    problem_pics = sorted((project_dir / "problem").glob("*.png"))
-    test_cases_pics = sorted((project_dir / "test-cases").glob("*.png"))
-    solution_files = sorted((project_dir / "solutions").glob("*.*"))
+class Record:
+    def __init__(self, platform, prob_name):
+        self.platform = platform
+        self.prob_name = prob_name
 
-    valid_soln_exts = set()
+        self.project_dir = Path(f"platforms/{platform}/{prob_name}")
+        self.problem_pics = sorted((self.project_dir / "problem").glob("*.png"))
+        self.test_cases = sorted((self.project_dir / "test-cases").glob("*.*"))
+        self.solution_files = sorted((self.project_dir / "solutions").glob("*.*"))
 
-    for e in solution_files:
-        if os.stat(e).st_size == 0:
-            return False, sorted(valid_soln_exts), f"Solution file `{e.name}` is empty"
-        else:
-            valid_soln_exts.add(os.path.splitext(e)[1][1:])
+        self.issue = None
+        self.valid_soln_exts = set()
 
-    if len(problem_pics) == 0:
-        return False, sorted(valid_soln_exts), "Missing Problem Pics"
+        self.validate()
 
-    if len(test_cases_pics) == 0:
-        return False, sorted(valid_soln_exts), "Missing test cases pics"
+    def validate(self):
+        for e in self.solution_files:
+            if os.stat(e).st_size == 0:
+                self.issue = f"Solution file `{e.name}` is empty"
+                return False
+            else:
+                self.valid_soln_exts.add(os.path.splitext(e)[1][1:])
 
-    if len(solution_files) == 0:
-        return False, sorted(valid_soln_exts), "Missing Solution Files"
+        if len(self.problem_pics) == 0:
+            self.issue = "Missing Problem Pics"
+            return False
 
-    return True, sorted(valid_soln_exts), None
+        if len(self.test_cases) == 0:
+            self.issue = "Missing test cases pics"
+            return False
+
+        if len(self.solution_files) == 0:
+            self.issue = "Missing Solution Files"
+            return False
+
+        return True
+
+    def to_dict(self):
+        return {
+            "PLATFORM": self.platform,
+            "PROB NAME": self.prob_name,
+            "PROB_STMNT_PICS": len(self.problem_pics),
+            "TEST_CASES": len(self.test_cases),
+            "SOLN_EXTS": sorted(self.valid_soln_exts),
+            "STATUS": "PASS" if self.issue is None else "FAIL",
+            "ISSUE": self.issue or "",
+        }
+
+    def to_df(self):
+        return pd.DataFrame(self.to_dict())
 
 
 if __name__ == "__main__":
     platform = sys.argv[1]
     prob_name = sys.argv[2]
 
-    print(check_dir(platform, prob_name))
+    print(Record(platform, prob_name).to_df())
