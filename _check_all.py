@@ -12,11 +12,14 @@ for platform in sorted(Path("platforms").glob("*/")):
 
 df = pd.DataFrame(recs)
 df.to_csv("status.csv")
-print(df[df["STATUS"] != "PASS"].to_string())
+issue_df = df[df["STATUS"] != "PASS"]
 
-print()
-print("-" * 80)
-print()
+if len(issue_df) > 0:
+    print(issue_df.to_string())
+
+    print()
+    print("-" * 80)
+    print()
 
 summary = []
 tot_probs = 0

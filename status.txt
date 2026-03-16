@@ -1,11 +1,7 @@
-       PLATFORM                  PROB NAME  PROB_STMNT_PICS  TEST_CASES SOLN_EXTS STATUS                                 ISSUE
-3  hacker-earth  minimum-length-4-945227e2                2           0        []   FAIL  Solution file `solution.go` is empty
-
---------------------------------------------------------------------------------
-
-     PLATFORM  PASSED
-     codewars     2/2
- hacker-earth     1/2
-  hacker-rank   22/22
-     leetcode   74/74
-    TOTAL ==>  99/100
+     PLATFORM   PASSED
+     codechef      3/3
+     codewars      2/2
+ hacker-earth      2/2
+  hacker-rank    22/22
+     leetcode    76/76
+    TOTAL ==>  105/105
