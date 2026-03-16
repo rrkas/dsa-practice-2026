@@ -3,5 +3,5 @@
      codewars      2/2
  hacker-earth      2/2
   hacker-rank    22/22
-     leetcode    76/76
-    TOTAL ==>  105/105
+     leetcode    78/78
+    TOTAL ==>  107/107
