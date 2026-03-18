@@ -12,11 +12,11 @@ for platform in sorted(Path("platforms").glob("*/")):
 
 
 df = pd.DataFrame(recs)
-df.to_csv("status.csv")
+df.to_csv("status.csv", na_rep="")
 issue_df = df[df["STATUS"] != "PASS"]
 
 if len(issue_df) > 0:
-    print(issue_df.to_string())
+    print(issue_df.to_string(na_rep=""))
 
     print()
     print("-" * 80)
@@ -54,4 +54,4 @@ summary.append(
     }
 )
 
-print(pd.DataFrame(summary).to_string(index=0))
+print(pd.DataFrame(summary).to_string(index=0, na_rep=""))

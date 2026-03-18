@@ -54,8 +54,8 @@ class Record:
         return {
             "PLATFORM": self.platform,
             "PROB NAME": self.prob_name,
-            "DIFF_SCORE": self.difficulty_score or 0,
-            "DIFF_LEVEL": self.difficulty_level or "",
+            "DIFF_SCORE": self.difficulty_score,
+            "DIFF_LEVEL": self.difficulty_level,
             "PROB_STMNT_PICS": len(self.problem_pics),
             "TEST_CASES": len(self.test_cases),
             "SOLN_EXTS": sorted(self.valid_soln_exts),
