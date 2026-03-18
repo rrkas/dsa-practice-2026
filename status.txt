@@ -3,10 +3,10 @@
 
 --------------------------------------------------------------------------------
 
-     PLATFORM   PASSED                  DIFF_LEVELS TOT_DIFF_SCORE
-     codechef      6/6                                        3446
-     codewars      2/2                                          13
- hacker-earth      2/2             {'E': 1, 'M': 1}               
-  hacker-rank    23/24                                         821
-     leetcode    78/78  {'E': 15, 'H': 16, 'M': 47}               
-    TOTAL ==>  111/112                                            
+     PLATFORM   PASSED                             DIFF_LEVELS TOT_DIFF_SCORE
+     codechef      6/6                                                   3446
+     codewars      2/2                                                     13
+ hacker-earth      2/2                {'EASY': 1, 'MEDIUM': 1}               
+  hacker-rank    23/24                                                    821
+     leetcode    84/84  {'EASY': 16, 'HARD': 17, 'MEDIUM': 51}               
+    TOTAL ==>  117/118                                                       

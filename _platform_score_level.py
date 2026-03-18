@@ -22,6 +22,14 @@ def get_platform_score_level(platform: str, prob_name: str):
                 f"score-level logic not implemented for platform `{platform}`"
             )
 
+    match level:
+        case "E":
+            level = "EASY"
+        case "M":
+            level = "MEDIUM"
+        case "H":
+            level = "HARD"
+
     assert (
         score is not None or level is not None
     ), f"Either score or difficulty level is needed, found neither!!"
