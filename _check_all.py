@@ -1,4 +1,6 @@
 from pathlib import Path
+
+import numpy as np
 from _check_folder import Record
 import pandas as pd, json
 from collections import Counter
@@ -35,8 +37,8 @@ for (pl,), tdf in df.groupby(["PLATFORM"]):
             "PLATFORM": pl,
             "PASSED": f"{passed}/{tot}",
             "DIFF_LEVELS": (
-                dict(**Counter(tdf["DIFF_LEVEL"]))
-                if tdf["DIFF_SCORE"].sum() == 0
+                dict(Counter(tdf["DIFF_LEVEL"]).items())
+                if tuple(tdf["DIFF_LEVEL"].unique()) != (np.nan,)
                 else ""
             ),
             "TOT_DIFF_SCORE": (

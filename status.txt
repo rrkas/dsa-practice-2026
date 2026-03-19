@@ -1,12 +1,7 @@
-       PLATFORM          PROB NAME  DIFF_SCORE DIFF_LEVEL  PROB_STMNT_PICS  TEST_CASES SOLN_EXTS STATUS                                 ISSUE
-33  hacker-rank  80--fighting-pits        80.0                           3           0        []   FAIL  Solution file `solution.go` is empty
-
---------------------------------------------------------------------------------
-
      PLATFORM   PASSED                             DIFF_LEVELS TOT_DIFF_SCORE
      codechef      6/6                                                 3446.0
      codewars      2/2                                                   13.0
  hacker-earth      2/2                {'EASY': 1, 'MEDIUM': 1}               
-  hacker-rank    23/24                                                  821.0
-     leetcode    84/84  {'EASY': 16, 'HARD': 17, 'MEDIUM': 51}               
-    TOTAL ==>  117/118                                                       
+  hacker-rank    25/25                                                  831.0
+     leetcode    87/87  {'EASY': 16, 'HARD': 19, 'MEDIUM': 52}               
+    TOTAL ==>  122/122                                                       

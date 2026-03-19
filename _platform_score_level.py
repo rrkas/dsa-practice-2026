@@ -6,21 +6,23 @@ def get_platform_score_level(platform: str, prob_name: str):
         )
 
     score, level = None, None
-    match platform:
-        case "codechef":
-            score = int(prob_name_parts[0])
-        case "codewars":
-            score = int(prob_name_parts[0])
-        case "hacker-rank":
-            score = int(prob_name_parts[0])
-        case "hacker-earth":
-            level = prob_name_parts[0]
-        case "leetcode":
-            level = prob_name_parts[0]
-        case _:
-            raise NotImplementedError(
-                f"score-level logic not implemented for platform `{platform}`"
-            )
+
+    # SCORES
+    if platform in ["codechef", "codewars", "hacker-rank"]:
+        score = int(prob_name_parts[0])
+
+    # LEVELS
+    elif platform in ["hacker-earth", "leetcode", "interviewbit", "machinehack"]:
+        level = prob_name_parts[0]
+
+    # SCORE & LEVEL
+    elif platform in []:
+        pass
+
+    else:
+        raise NotImplementedError(
+            f"score-level logic not implemented for platform `{platform}`"
+        )
 
     match level:
         case "E":
