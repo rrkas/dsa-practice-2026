@@ -2,7 +2,7 @@ def get_platform_score_level(platform: str, prob_name: str):
     prob_name_parts = prob_name.split("--")
     if len(prob_name_parts) == 1:
         raise NameError(
-            f"{platform}/{prob_name} has no score or difficulty level in name (--)"
+            f"{platform}/{prob_name} has no score or difficulty level in name (--)!"
         )
 
     score, level = None, None
@@ -21,16 +21,19 @@ def get_platform_score_level(platform: str, prob_name: str):
 
     else:
         raise NotImplementedError(
-            f"score-level logic not implemented for platform `{platform}`"
+            f"score-level logic not implemented for platform `{platform}`!"
         )
 
-    match level:
-        case "E":
-            level = "EASY"
-        case "M":
-            level = "MEDIUM"
-        case "H":
-            level = "HARD"
+    if level:
+        match level:
+            case "E":
+                level = "EASY"
+            case "M":
+                level = "MEDIUM"
+            case "H":
+                level = "HARD"
+            case _:
+                raise NotImplementedError(f"Difficulty Level `{level}` is not handled!")
 
     assert (
         score is not None or level is not None

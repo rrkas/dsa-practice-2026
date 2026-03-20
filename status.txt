@@ -2,6 +2,6 @@
      codechef      6/6                                                 3446.0
      codewars      2/2                                                   13.0
  hacker-earth      2/2                {'EASY': 1, 'MEDIUM': 1}               
-  hacker-rank    29/29                                                  871.0
+  hacker-rank    34/34                                                  926.0
      leetcode    87/87  {'EASY': 16, 'HARD': 19, 'MEDIUM': 52}               
-    TOTAL ==>  126/126                                                       
+    TOTAL ==>  131/131                                                       
