@@ -65,6 +65,10 @@ class Record:
                 prob_name = prob_name.split("--")[-1]
                 return f"https://www.hackerrank.com/challenges/{prob_name}/problem?isFullScreen=false"
 
+            case "interviewbit":
+                prob_name = prob_name.split("--")[-1]
+                return f"https://www.interviewbit.com/problems/{prob_name}/"
+
             case "leetcode":
                 prob_name = prob_name.split("--")[-1]
                 return f"https://leetcode.com/problems/{prob_name}/description/"
@@ -97,6 +101,7 @@ PROB_NAME_PARTS = {
     "codewars": 3,
     "hacker-earth": 2,
     "hacker-rank": 3,
+    "interviewbit": 2,
     "leetcode": 2,
 }
 

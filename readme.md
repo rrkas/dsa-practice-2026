@@ -19,14 +19,9 @@
         - **Monthly**: Rs. 1999/month
         - **Quarterly**: Rs. 1666/month
 
-
-1. **Code Chef** [LIMITED FREE, VERY FEW PROBLEMS FREE]
-    - https://www.codechef.com/
-    - **DSA**: https://www.codechef.com/roadmap/data-structures-and-algorithms
-    - **Competitive Programming**: https://www.codechef.com/roadmap/become-5-star
-    - **Pro Plan**:
-        - **Monthly**: Rs. 1500/month
-        - **Yearly**: Rs. 3999/year
+1. **Hacker Earth** [FULL FREE]
+    - https://www.hackerearth.com/
+    - https://www.hackerearth.com/practice/problems/
 
 
 1. **Code Wars** [FREE]
@@ -47,17 +42,20 @@
     - `exercism download --track=python --exercise=hello-world` -->
     - not-for-profit organization, relies on community donations
 
-
-1. **Hacker Earth** [FULL FREE]
-    - https://www.hackerearth.com/
-
+1. **Code Chef** [LIMITED FREE, VERY FEW PROBLEMS FREE]
+    - https://www.codechef.com/
+    - **DSA**: https://www.codechef.com/roadmap/data-structures-and-algorithms
+    - **Competitive Programming**: https://www.codechef.com/roadmap/become-5-star
+    - **Pro Plan**:
+        - **Monthly**: Rs. 1500/month
+        - **Yearly**: Rs. 3999/year
 
 1. **Interview Bit** [FREE, ERROR 500]
     - https://www.interviewbit.com/
     - https://www.interviewbit.com/coding-interview-questions/#
 
 
-1. **Code in Game** [FULL FREE, TOO MUCH DRAMA]
+1. **Code in Game** [FULL FREE, DRAMATIC]
     - https://www.codingame.com/
     - https://www.codingame.com/training
     - https://www.codingame.com/codegolf

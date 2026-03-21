@@ -3,5 +3,6 @@
      codewars      2/2                                                                13.0
  hacker-earth      2/2                             {'EASY': 1, 'MEDIUM': 1}               
   hacker-rank    47/47  {'ADVANCED': 2, 'EASY': 34, 'HARD': 5, 'MEDIUM': 6}         1141.0
+ interviewbit      2/2                             {'EASY': 1, 'MEDIUM': 1}               
      leetcode    87/87               {'EASY': 16, 'HARD': 19, 'MEDIUM': 52}               
-    TOTAL ==>  144/144                                                                    
+    TOTAL ==>  146/146                                                                    
