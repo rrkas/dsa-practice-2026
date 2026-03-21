@@ -1,11 +1,12 @@
 from pathlib import Path
 import sys, os
 from _platform_score_level import get_platform_score_level
+from _check_folder import Record
 
 
 def generate_new(platform: str, prob_name: str):
     platform, prob_name = platform.strip("/"), prob_name.strip("/")
-    get_platform_score_level(platform, prob_name)
+    score, level = get_platform_score_level(platform, prob_name)
     platform_dir = (Path("platforms") / platform).resolve()
     os.makedirs(platform_dir, exist_ok=True)
 
@@ -23,6 +24,8 @@ def generate_new(platform: str, prob_name: str):
             pass
 
         os.system(f"code {fp}")
+
+    print(Record(platform=platform, prob_name=prob_name).to_dict(), flush=True)
 
     os.system(f"nautilus {prob_dir}")
 

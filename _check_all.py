@@ -1,9 +1,9 @@
-from pathlib import Path
-
 import numpy as np
-from _check_folder import Record
-import pandas as pd, json
+from pathlib import Path
 from collections import Counter
+
+import pandas as pd
+from _platform_score_level import Record
 
 recs = []
 
