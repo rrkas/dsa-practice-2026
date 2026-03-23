@@ -2,7 +2,7 @@
      codechef      6/6                                                              3446.0
      codewars      2/2                                                                13.0
  hacker-earth      2/2                             {'EASY': 1, 'MEDIUM': 1}               
-  hacker-rank    59/59  {'ADVANCED': 2, 'EASY': 44, 'HARD': 5, 'MEDIUM': 8}         1396.0
+  hacker-rank    60/60  {'ADVANCED': 2, 'EASY': 45, 'HARD': 5, 'MEDIUM': 8}         1416.0
  interviewbit      3/3                             {'EASY': 1, 'MEDIUM': 2}               
-     leetcode    88/88               {'EASY': 17, 'HARD': 19, 'MEDIUM': 52}               
-    TOTAL ==>  160/160                                                                    
+     leetcode    90/90               {'EASY': 17, 'HARD': 19, 'MEDIUM': 54}               
+    TOTAL ==>  163/163                                                                    
