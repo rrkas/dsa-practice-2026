@@ -1,8 +1,8 @@
-     PLATFORM   PASSED                                          DIFF_LEVELS TOT_DIFF_SCORE
-     codechef      6/6                                                              3446.0
-     codewars      2/2                                                                13.0
- hacker-earth      2/2                             {'EASY': 1, 'MEDIUM': 1}               
-  hacker-rank    60/60  {'ADVANCED': 2, 'EASY': 45, 'HARD': 5, 'MEDIUM': 8}         1416.0
- interviewbit      3/3                             {'EASY': 1, 'MEDIUM': 2}               
-     leetcode    90/90               {'EASY': 17, 'HARD': 19, 'MEDIUM': 54}               
-    TOTAL ==>  163/163                                                                    
+     PLATFORM   PASSED                                           DIFF_LEVELS TOT_DIFF_SCORE
+     codechef      6/6                                                               3446.0
+     codewars      2/2                                                                 13.0
+ hacker-earth      2/2                              {'EASY': 1, 'MEDIUM': 1}               
+  hacker-rank    66/66  {'ADVANCED': 2, 'EASY': 49, 'HARD': 5, 'MEDIUM': 10}         1566.0
+ interviewbit      3/3                              {'EASY': 1, 'MEDIUM': 2}               
+     leetcode    90/90                {'EASY': 17, 'HARD': 19, 'MEDIUM': 54}               
+    TOTAL ==>  169/169                                                                     
