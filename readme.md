@@ -1,5 +1,25 @@
 # DSA, Problem Solving Practice & Interview Prep - 2026
 
+## Focus
+- **Languages**:
+    - Python
+        - Pandas, NumPy
+
+    - Golang
+
+- **Data Structures**
+    - Map/ Dict
+    - List/ Array/ Matrix
+    - Linked List
+
+- **Algorithms**/ Problem Solving
+    - Optimizations
+
+- **SQL**
+
+- **Shell Scripting**
+
+
 ## DSA, Problem Solving Practice
 
 ### Free
@@ -12,6 +32,12 @@
 
 1. **Hacker Rank** [FREE]
     - https://www.hackerrank.com/
+    - https://www.hackerrank.com/domains/algorithms
+    - https://www.hackerrank.com/domains/data-structures
+    - https://www.hackerrank.com/domains/mathematics
+    - https://www.hackerrank.com/domains/ai
+    - https://www.hackerrank.com/domains/sql
+    - https://www.hackerrank.com/domains/shell
     - **PLUS**:
         - **Monthly**: Rs. 999/month
         - **Quarterly**: Rs. 833/month
