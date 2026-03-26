@@ -1,13 +1,8 @@
-       PLATFORM                 PROB NAME  DIFF_SCORE DIFF_LEVEL  PROB_STMNT_PICS  TEST_CASES SOLN_EXTS STATUS                                                                           PROB_LINK                                 ISSUE
-65  hacker-rank  E--30--manasa-and-stones        30.0       EASY                2           2        []   FAIL  https://www.hackerrank.com/challenges/manasa-and-stones/problem?isFullScreen=false  Solution file `solution.go` is empty
-
---------------------------------------------------------------------------------
-
      PLATFORM   PASSED                                           DIFF_LEVELS TOT_DIFF_SCORE
      codechef      6/6                                                               3446.0
      codewars      2/2                                                                 13.0
  hacker-earth      2/2                              {'EASY': 1, 'MEDIUM': 1}               
-  hacker-rank    83/84  {'ADVANCED': 2, 'EASY': 58, 'HARD': 6, 'MEDIUM': 18}         2151.0
+  hacker-rank    89/89  {'ADVANCED': 2, 'EASY': 61, 'HARD': 6, 'MEDIUM': 20}         2291.0
  interviewbit      3/3                              {'EASY': 1, 'MEDIUM': 2}               
      leetcode    90/90                {'EASY': 17, 'HARD': 19, 'MEDIUM': 54}               
-    TOTAL ==>  186/187                                                                     
+    TOTAL ==>  192/192                                                                     
